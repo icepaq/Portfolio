@@ -32,7 +32,6 @@ function App() {
                 <div className='menu_item'>
                     <a className='nolink' href="#contactme">Contact</a> 
                 </div>
-
             </div>
 
 
@@ -134,7 +133,7 @@ function App() {
                         </div>
                         <h2><a className='nolink' href='https://github.com/icepaq/TakeABreak-VScode'> Take A Break </a></h2>
                         <img src={vscode} className='projectImage' alt='api' />
-                        <p className='description'>Visual Studio Code extension that will tell you to take periodic breaks. Built using the Visual Studio CodeAPI</p>
+                        <p className='description'>Visual Studio Code extension that will tell you to take periodic breaks. Built using the Visual Studio Code API.</p>
                     </div>
                     <div className='projectItem right'>
                         <div className='icons shifted nmargin'>
@@ -142,7 +141,7 @@ function App() {
                         </div>
                         <h2 > <a className='nolink' href='https://github.com/icepaq/Community-Bot'> Community Bot </a></h2>
                         <img src={discord} className='projectImage' alt='api' />
-                        <p className='description'>Discord bot with a leveling system. Built using the Discord API</p>
+                        <p className='description'>Discord bot with a leveling system. Built using the Discord API.</p>
                     </div>
                 </div>
             </div>
