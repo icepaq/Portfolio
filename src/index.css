@@ -44,7 +44,7 @@ code {
     }
 
     .firstRow {
-        margin-top: 350px;
+        margin-top: 650px;
         width: 900px;
         overflow: hidden;
         margin-left: 50px;
@@ -56,11 +56,11 @@ code {
 
 
     .header h1 {
-        font-size: 70px;
+        font-size: 140px;
     }
 
     .header span {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .menu {
@@ -72,7 +72,7 @@ code {
         float: left;
         margin: 25px;
     
-        font-size: 22px;
+        font-size: 40px;
     
         cursor: pointer;
     
@@ -84,18 +84,22 @@ code {
         color: white;
     }
 
+    .projectsSubtext {
+        font-size: 40px;
+    }
+
     .secondRow {
         width: 900px;
         font-size: 20px;
         margin-left: 50px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .projects {
         float: left;
         margin-right: 20px;
         padding: 10px 30px;
-        font-size: 30px;
+        font-size: 50px;
     
         border-style: solid;
         border-radius: 10px;
@@ -108,21 +112,29 @@ code {
     
         transition: 0.3s;
     }
-    
-    .projects:hover {
-        background-color: rgb(55, 132, 184);
+
+    .description {
+        font-size: 40px;
+    }
+
+    .projectsTitle {
+        font-size: 100px;
+    }
+
+    .projectTitle {
+        font-size: 70px;
     }
 
     .thirdRow {
         width: 900px;
-        font-size: 20px;
         margin-left: 50px;
-        margin-top: 400px;
+        margin-top: 900px;
     }
 
     .skillsTitle {
         float: left;
         width: 900px;
+        font-size: 100px;
     }
     
     .skills {
@@ -132,7 +144,7 @@ code {
         float: left;
         margin: 0 20px;
         padding: 10px 30px;
-        font-size: 30px;
+        font-size: 50px;
     
         color: white;
     
@@ -146,21 +158,21 @@ code {
     
         transition: 0.3s;
     }
-    
-    .skills:hover {
-        background-color: #161616;
+
+    .subtext {
+        font-size: 50px;
     }
 
     .skillItems {
-        width: 900px;
         overflow: hidden;
     }
 
     .skillItem {
-        width: 110px;
+        width: 210px;
         float: left;
         padding: 20px 0px;
-        padding-right: 20px;
+        padding-right: 10px;
+        font-size: 30px;
         cursor: default;
     }
 
@@ -175,9 +187,7 @@ code {
         display: none;
     }
 
-    .projectsRow {
-        width: 500px;
-    }
+
 
     .projectItem {
         width: fit-content;
@@ -187,10 +197,42 @@ code {
         width: 100%;
     }
 
+    .contactme {
+        margin-left: 50px;
+        margin-top: 200px;
+        padding-bottom: 200px;
+
+        width: 90%;
+    }
+
+    .contactme h1 {
+        font-size: 100px;
+    }
+
+    .contactme p {
+        font-size: 40px;
+    }
+
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16/10) {
     
+.row {
+    width: 1150px;
+    display: inline;
+}
+
+.left {
+    float: left;
+    width: 575px;
+    display: inline;
+}
+
+.right {
+    float: right;
+    width: 575px;
+    display: inline;
+}
 
 .wrapper {
     background-color: #161616;
@@ -216,6 +258,7 @@ code {
 .projects {
     float: left;
     margin-right: 20px;
+    margin-top: 15px;
     padding: 10px 30px;
 
     border-style: solid;
@@ -240,6 +283,7 @@ code {
     scroll-behavior: smooth;
     float: left;
     margin: 0 20px;
+    margin-top: 15px;
     padding: 10px 30px;
 
     color: white;
@@ -265,9 +309,9 @@ code {
     float: left; 
 }
 
-.App-logo {
-    float: right; 
-    max-width: 350px;
+.App-logo { 
+    max-width: 575px;
+    margin-top: 150px;
 }
 
 .menu {

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './mashup.png';
 import github from './github.png'
 import javascript from './javascript.png'
 import nodejs from './nodejs.png'
@@ -20,7 +20,14 @@ function App() {
         window.location.href = 'https://github.com/icepaq';
     }
 
-    document.title = 'Anton Codes'
+    document.title = 'Anton Codes';
+
+    const viewport = document.querySelector('meta[name="viewport"]');
+
+    if (viewport) {
+        viewport.content = 'initial-scale=1';
+        viewport.content = 'width=device-width';
+    }
 
     return (
         <div className='wrapper'>
@@ -32,32 +39,40 @@ function App() {
                     <a className='nolink' href='https://www.linkedin.com/in/antonre/'>LinkedIn</a>
                 </div>
                 <div className='menu_item'>
-                    <a className='nolink' href="#contactme">Contact</a> 
+                    <a className='nolink' href="#contactme">Contact</a>
                 </div>
             </div>
 
 
-            <div className='firstRow'>
-                <div className='header'>
-                    <h1>Hi I'm Anton!</h1>
-                    <span className='nooverflow'>I'm a fullstack developer with a focus on backend development.</span>
+            <div className='row'>
+                <div className='left'>
+                    <div className='firstRow'>
+                        <div className='header'>
+                            <h1>Hi I'm Anton!</h1>
+                            <span className='nooverflow'>I'm a fullstack developer with a focus on backend development.</span>
+                        </div>
+                    </div>
+                    <div className='secondRow'>
+                        <a className='projects' href="#fourthRow">My Projects</a>
+                        <a className='skills' href='#thirdRow'>My Skills</a>
+                    </div>
                 </div>
-                <img src={logo} className='App-logo' alt='logo' />
+                <div className='right'>
+                    <img src={logo} className='App-logo' alt='logo' />
+                </div>
             </div>
 
-            <div className='secondRow'>
-                <a className='projects' href="#fourthRow">My Projects</a>
-                <a className='skills' href='#thirdRow'>My Skills</a>
-            </div>
+
+
 
             <div className='thirdRow' id='thirdRow'>
-                <h1 classNam='skillsTitle'>Skills</h1>
+                <h1 className='skillsTitle'>Skills</h1>
                 <p className='subtext'>Here is a list of my skills.</p>
 
 
                 <div className='skillItems'>
                     <div className='skillItem'>
-                        <span className='yellowglow'>JavaScript</span> 
+                        <span className='yellowglow'>JavaScript</span>
                     </div>
                     <div className='skillItem'>
                         <span className='orangeglow'>Java</span>
@@ -110,7 +125,7 @@ function App() {
                             <img src={springboot} className='smallicon' alt='springboot' />
                             <img src={mysql} className='smallicon' alt='mysql' />
                         </div>
-                        <h2> <a className='nolink' href='https://github.com/icepaq/RunCommandAPIEndpoint'> Run Command </a></h2>
+                        <h2 className='projectTitle'> <a className='nolink' href='https://github.com/icepaq/RunCommandAPIEndpoint'> Run Command </a></h2>
                         <img src={api} className='projectImage' alt='api' />
                         <p className='description'>This API allows a you to run commands on a server without needing
                             to login. Made for automation tasks and managing several servers. A <a className='link' href='https://github.com/icepaq/RunCommand-Consumer'> React application
@@ -122,7 +137,7 @@ function App() {
                             <img src={nodejs} className='icon_' alt='nodejs' />
                             <img src={mongodb} className='mongoicon' alt='mongodb' />
                         </div>
-                        <h2 className='opensourcemorning'><a className='nolink' href='https://github.com/icepaq/OpenSourceMorning'> Open Source Morning </a></h2>
+                        <h2 className='opensourcemorning projectTitle'><a className='nolink' href='https://github.com/icepaq/OpenSourceMorning'> Open Source Morning </a></h2>
                         <img src={osm} className='projectImage' alt='api' />
                         <p className='description'>Collaborative project. Implemented OpenWeather API and backend of the login system.</p>
                     </div>
@@ -133,7 +148,7 @@ function App() {
                         <div className='icons'>
                             <img src={javascript} className='icon' alt='js' />
                         </div>
-                        <h2><a className='nolink' href='https://github.com/icepaq/TakeABreak-VScode'> Take A Break </a></h2>
+                        <h2 className='projectTitle'><a className='nolink' href='https://github.com/icepaq/TakeABreak-VScode'> Take A Break </a></h2>
                         <img src={vscode} className='projectImage' alt='api' />
                         <p className='description'>Visual Studio Code extension that will tell you to take periodic breaks. Built using the Visual Studio Code API.</p>
                     </div>
@@ -141,7 +156,7 @@ function App() {
                         <div className='icons shifted nmargin'>
                             <img src={python} className='icon' alt='js' />
                         </div>
-                        <h2 > <a className='nolink' href='https://github.com/icepaq/Community-Bot'> Community Bot </a></h2>
+                        <h2 className='projectTitle'> <a className='nolink' href='https://github.com/icepaq/Community-Bot'> Community Bot </a></h2>
                         <img src={discord} className='projectImage' alt='api' />
                         <p className='description'>Discord bot with a leveling system. Built using the Discord API.</p>
                     </div>
