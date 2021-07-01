@@ -20,6 +20,8 @@ function App() {
         window.location.href = 'https://github.com/icepaq';
     }
 
+    document.title = 'Anton Codes'
+
     return (
         <div className='wrapper'>
             <div className='menu'>
@@ -38,7 +40,7 @@ function App() {
             <div className='firstRow'>
                 <div className='header'>
                     <h1>Hi I'm Anton!</h1>
-                    <span>I'm a fullstack developer with a focus on backend development.</span>
+                    <span className='nooverflow'>I'm a fullstack developer with a focus on backend development.</span>
                 </div>
                 <img src={logo} className='App-logo' alt='logo' />
             </div>

@@ -3,6 +3,7 @@ html {
 }
 body {
   margin: 0;
+  width: 900px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -15,9 +16,187 @@ code {
     monospace;
 }
 
+@media (max-aspect-ratio: 10/16) {
+    
+    .link {
+        color: white;
+    }
+    
+    .link:visited {
+        color: white;
+    }
+    
+    .nolink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nooverflow {
+        max-width: 400px;
+        overflow: none;
+    }
+    .wrapper {
+        background-color: #161616;
+        width: 1000px;
+        flex-direction: column;
+        align-items: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+
+    .firstRow {
+        margin-top: 350px;
+        width: 900px;
+        overflow: hidden;
+        margin-left: 50px;
+    }
+
+    .App-logo {
+        display: none;
+    }
+
+
+    .header h1 {
+        font-size: 70px;
+    }
+
+    .header span {
+        font-size: 30px;
+    }
+
+    .menu {
+        padding-top: 25px;
+        width: 900px;
+    }
+
+    .menu_item {
+        float: left;
+        margin: 25px;
+    
+        font-size: 22px;
+    
+        cursor: pointer;
+    
+        transition: 0.1s;
+    }
+
+    .nolink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .secondRow {
+        width: 900px;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .projects {
+        float: left;
+        margin-right: 20px;
+        padding: 10px 30px;
+        font-size: 30px;
+    
+        border-style: solid;
+        border-radius: 10px;
+        border-color: white;
+    
+        cursor: default;
+    
+        color: white;
+        text-decoration: none;
+    
+        transition: 0.3s;
+    }
+    
+    .projects:hover {
+        background-color: rgb(55, 132, 184);
+    }
+
+    .thirdRow {
+        width: 900px;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-top: 500px;
+    }
+
+    .skillsTitle {
+        float: left;
+        width: 900px;
+    }
+    
+    .skills {
+    
+        text-decoration: none;
+        scroll-behavior: smooth;
+        float: left;
+        margin: 0 20px;
+        padding: 10px 30px;
+        font-size: 30px;
+    
+        color: white;
+    
+        background-color: rgb(55, 132, 184);
+    
+        border-style: solid;
+        border-radius: 10px;
+        border-color: white;
+    
+        cursor: default;
+    
+        transition: 0.3s;
+    }
+    
+    .skills:hover {
+        background-color: #161616;
+    }
+
+    .skillItems {
+        width: 900px;
+        overflow: hidden;
+    }
+
+    .skillItem {
+        width: 110px;
+        float: left;
+        padding: 20px 0px;
+        padding-right: 20px;
+        cursor: default;
+    }
+
+    .fourthRow {
+        width: 900px;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-top: 200px;
+    }
+
+    .icon, .icon_, .smallicon, .mongoicon {
+        display: none;
+    }
+
+    .projectsRow {
+        width: 500px;
+    }
+
+    .projectItem {
+        width: fit-content;
+    }
+
+    .projectImage {
+        width: 100%;
+    }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    
+
 .wrapper {
     background-color: #161616;
   min-height: 900px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +212,6 @@ code {
 
 .secondRow {
     width: 1150px;
-
     font-size: 20px;
 }
 
@@ -274,4 +452,6 @@ code {
 .nolink {
     text-decoration: none;
     color: white;
+}
+
 }
