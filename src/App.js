@@ -12,6 +12,8 @@ import linkedin from './linkedin.png'
 import vscode from './vscode.png'
 import discord from './discord.png'
 import python from './python.png'
+import ethereum from './ethereum.png'
+import solidity from './solidity.png'
 
 import './App.css';
 function App() {
@@ -154,11 +156,11 @@ function App() {
                     </div>
                     <div className='projectItem right'>
                         <div className='icons shifted nmargin'>
-                            <img src={python} className='icon' alt='js' />
+                            <img src={solidity} className='icon' alt='solidity' />
                         </div>
-                        <h2 className='projectTitle'> <a className='nolink' href='https://github.com/icepaq/Community-Bot'> Community Bot </a></h2>
-                        <img src={discord} className='projectImage' alt='api' />
-                        <p className='description'>Discord bot with a leveling system. Built using the Discord API.</p>
+                        <h2 className='projectTitle'> <a className='nolink' href='https://github.com/icepaq/TitleTransferSmartContract'> Title Transfer Smart Contract </a></h2>
+                        <img src={ethereum} className='projectImage' alt='ethereum' />
+                        <p className='description'>A smart contract built on the Ethereum network. Demonstrates how car titles could be managed as NFTs.</p>
                     </div>
                 </div>
             </div>
