@@ -14,6 +14,7 @@ import discord from './discord.png'
 import python from './python.png'
 import ethereum from './ethereum.png'
 import solidity from './solidity.png'
+import ctrl from './ctrl.jpg'
 
 import './App.css';
 function App() {
@@ -126,12 +127,13 @@ function App() {
                             <img src={java} className='icon' alt='js' />
                             <img src={springboot} className='smallicon' alt='springboot' />
                             <img src={mysql} className='smallicon' alt='mysql' />
+                            <img src={javascript} className='icon_' alt='js' />
+                            <img src={nodejs} className='icon_' alt='nodejs' />
+                            <img src={mongodb} className='mongoicon' alt='mongodb' />
                         </div>
-                        <h2 className='projectTitle'> <a className='nolink' href='https://github.com/icepaq/RunCommandAPIEndpoint'> Run Command </a></h2>
-                        <img src={api} className='projectImage' alt='api' />
-                        <p className='description'>This API allows a you to run commands on a server without needing
-                            to login. Made for automation tasks and managing several servers. A <a className='link' href='https://github.com/icepaq/RunCommand-Consumer'> React application
-                            </a> was created to consume this API.</p>
+                        <h2 className='projectTitle'> <a className='nolink' href='https://youtu.be/xYpoIEmky50'> CTRL Server Hosting </a></h2>
+                        <img src={ctrl} className='projectImage' alt='api' />
+                        <p className='description'>Building a suite of tools to make server management easy and building a platform to provide hosting services.</p>
                     </div>
                     <div className='projectItem right'>
                         <div className='icons shifted negativemargin'>
