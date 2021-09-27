@@ -39,10 +39,7 @@ function App() {
                     <a className='nolink' href='https://github.com/icepaq'>GitHub</a>
                 </div>
                 <div className='menu_item'>
-                    <a className='nolink' href='https://www.linkedin.com/in/antonre/'>LinkedIn</a>
-                </div>
-                <div className='menu_item'>
-                    <a className='nolink' href="#contactme">Contact</a>
+                    <a className='nolink' href='https://www.linkedin.com/in/antonmo/'>LinkedIn</a>
                 </div>
             </div>
 
@@ -131,7 +128,7 @@ function App() {
                             <img src={nodejs} className='icon_' alt='nodejs' />
                             <img src={mongodb} className='mongoicon' alt='mongodb' />
                         </div>
-                        <h2 className='projectTitle'> <a className='nolink' href='https://youtu.be/xYpoIEmky50'> CTRL Server Hosting </a></h2>
+                        <h2 className='projectTitle'> CTRL Panel </h2>
                         <img src={ctrl} className='projectImage' alt='api' />
                         <p className='description'>Building a suite of tools to make server management easy and building a platform to provide hosting services.</p>
                     </div>
@@ -165,11 +162,6 @@ function App() {
                         <p className='description'>A smart contract built on the Ethereum network. Demonstrates how car titles could be managed as NFTs.</p>
                     </div>
                 </div>
-            </div>
-
-            <div className='contactme' id='contactme'>
-                <h1>Contact Me</h1>
-                <p>Let's get in touch, anton@antoncodes.xyz or add me on <a className='link' href='https://www.linkedin.com/in/antonre/'>LinkedIn</a> </p>
             </div>
         </div>
     );
